@@ -1,22 +1,25 @@
 #include <iostream>
-#include <vector>
+//容器的头文件
+//#include <vector>
+#include "Vector_use/Vector_use.h"
+#include <string>
 
 
 int main() {
-    std::vector<int> a;
-    a.push_back(1);
-    a.push_back(3);
-    a.push_back(5);
-    a.push_back(4);
 
-    //第一种容器取值操作
-    std::vector<int>::iterator it = a.begin();
-    std::vector<int>::iterator it2 = a.end();
-    while (it != it2) {
-        std::cout << *it << std::endl;
-        it++;
-    }
+    Vector_use::Vector v1;
 
-    std::cout << "Hello, World!" << std::endl;
+    v1.test01();
+    std::cout << "--------------" << std::endl;
+    v1.test02();
+    std::cout << "--------------" << std::endl;
+    v1.test03();
+    std::cout << std::endl << "--------------" << std::endl;
+    v1.test04();
+    std::cout << "--------------" << std::endl;
+    v1.test05();
+    // while (true) {
+    //
+    // }
     return 0;
 }
